@@ -74,31 +74,36 @@ body {
   background: #25975A;
 }
 .column-1 {
-  width: 100px;
+  width: 100%;
   flex-direction: column;
   text-align: center;
   background: #25975A;
   border: 1px solid #fff;
 }
 .column-2 {
-  background: #fff;
   
+  width: 100%;
   flex-direction: column;
   display: flex;
 }
 .column-3 {
+  width: 100%;
   flex-direction: column;
 }
 .column-4 {
+  width: 100%;
   flex-direction: column;
 }
 .column-5 {
+  width: 100%;
   flex-direction: column;
 }
 .column-6 {
+  width: 100%;
   flex-direction: column;
 }
 .column-7 {
+  width: 100%;
   flex-direction: column;
 }
 /* schedule-assist */
