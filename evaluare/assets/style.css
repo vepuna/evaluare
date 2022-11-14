@@ -31,6 +31,11 @@ body {
   color: #fff;
   background: #25975A;
   font-size: 16px;
+  transition: background .1s linear;
+}
+.nav-button:hover {
+  background: #fff;
+  color: #000;
 }
 /* input-search */
 .input-search {
@@ -46,6 +51,9 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4,24px);
   background: #fff;
+}
+#null {
+  color: #25975A;
 }
 .group {
   padding: 0 15px ;
@@ -66,9 +74,16 @@ body {
   display: flex;
   justify-content: start;
 }
-.schedule-day {
-  border: 1px solid #fff;
+.schedule-day-week{
+  border: 1px solid gray;
   color: #fff;
+  background: #25975A;
+}
+.schedule-day {
+  border: 1px solid gray;
+  color: #fff;
+  background: rgb(101, 250, 15);
+ 
 }
 #schedule-top {
   background: #25975A;
@@ -76,35 +91,43 @@ body {
 .column-1 {
   width: 100%;
   flex-direction: column;
+  
   text-align: center;
   background: #25975A;
-  border: 1px solid #fff;
+  
+
 }
 .column-2 {
   
   width: 100%;
   flex-direction: column;
   display: flex;
+  text-align: center;
 }
 .column-3 {
   width: 100%;
   flex-direction: column;
+  text-align: center;
 }
 .column-4 {
   width: 100%;
   flex-direction: column;
+  text-align: center;
 }
 .column-5 {
   width: 100%;
   flex-direction: column;
+  text-align: center;
 }
 .column-6 {
   width: 100%;
   flex-direction: column;
+  text-align: center;
 }
 .column-7 {
   width: 100%;
   flex-direction: column;
+  text-align: center;
 }
 /* schedule-assist */
 .schedule-assist {
@@ -144,7 +167,9 @@ body {
   
 }
 #logo-schedule {
- margin: 0 auto;
+ display: grid;
+ justify-items: center;
+
 }
 .schedule-title {
   text-align: center;
@@ -158,6 +183,13 @@ body {
   border: 1px solid #fff;
   
 }
+.schedule-table-row:hover .schedule-table-text{
+  background: rgb(245, 244, 184);
+}
+.schedule-table-row:hover .schedule-table-time{
+  background: rgb(245, 244, 184);
+  color: #000;
+}
 
 .schedule-table-time {
   background: #25975A;
@@ -170,5 +202,6 @@ text-align: center;
 padding: 15px;
 background: #fff;
 color: #000;
-border: 1px solid #000;
+border-bottom: 1px solid #000;
+border-left: 1px solid #fff;
 }
